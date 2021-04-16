@@ -13,7 +13,7 @@
 - `/containers`: Components that are wired to the app state
 - `/utils`: Any and all utility functions.
 
-### File Naming Convention
+### File (Folder) Naming Convention
 
 We will be using `kebab-case` for all filenames. This is to ensure that this repo is cross-compatible between Windows, Linux, and OSX. 
 

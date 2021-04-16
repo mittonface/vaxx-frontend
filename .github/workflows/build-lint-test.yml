@@ -1,0 +1,23 @@
+name: Build, Test, Lint for Pull Requests
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      # TODO: Add testing once we've got that scaffolded
+          
+      - name: Lint
+        run: npm run lint

@@ -10,6 +10,7 @@
     "start": "next start",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged"
+    "lint": "eslint \"**/*{.ts,.tsx}\" --ignore-pattern node_modules/"
   },
   "repository": {
     "type": "git",
