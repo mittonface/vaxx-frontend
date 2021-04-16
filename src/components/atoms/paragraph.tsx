@@ -1,7 +1,9 @@
 import React from "react";
 
 type ParagraphProps = {
-  children: string
-}
+  children: string;
+};
 
-export const Paragraph: React.FC<ParagraphProps> = ({ children }) => <p>{children}</p>;
+export const Paragraph: React.FC<ParagraphProps> = ({ children }) => (
+  <p>{children}</p>
+);
